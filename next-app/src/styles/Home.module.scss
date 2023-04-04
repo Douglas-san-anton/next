@@ -1,6 +1,9 @@
 @import 'vars';
 
 .main {
+  display: flex;
   background: $--bg-color-primary;
   height: 100vh;
+  color: white;
+  padding: $--pd1;
 }
