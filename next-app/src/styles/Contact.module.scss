@@ -1,0 +1,37 @@
+@import 'vars';
+
+.footer {
+  background-color: $--bg-color-primary;
+  height: 70px;
+  color: white;
+  font-family: $--font-primary;
+  position: sticky;
+}
+
+.footer__container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 100%;
+}
+
+.footer__logo {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.footer__menu {
+  display: flex;
+}
+
+.footer__item {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__item:last-child {
+  margin-left: 2rem;
+}
