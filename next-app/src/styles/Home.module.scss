@@ -1,41 +1,52 @@
 @import 'vars';
 
-.main_container {
+.main__container {
   width: 100%;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   background: $--bg-color-primary;
-  overflow-x: hidden;
-  padding: $--pd1;
   font-family: $--font-secondary;
-  color: white;
+  overflow-x: hidden;
 
-  .about {
+  .about,
+  .skills {
     margin: 0 auto;
+    color: white;
 
-    .about__container {
+    .about__container,
+    .skills__container {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: $--pd1;
 
-      .about__text {
+      .about__text,
+      .skills__text {
         padding: 0 3rem 0 0;
         width: 52%;
 
-        .about__text h1 {
+        .about__text h1,
+        .skills__text h1 {
           font-size: 3.125rem;
           line-height: 1.1;
           margin-bottom: 0.5rem;
         }
 
-        .about__text p {
+        .about__text p,
+        .skills__text p {
           font-size: 1.630rem;
           font-weight: 400;
         }
       }
     }
 
-    .about__video_container {
+    .skills__container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .about__video_container,
+    .skills__video_container {
       box-sizing: border-box;
       display: flex;
       justify-content: flex-end;
@@ -43,7 +54,11 @@
       width: 48%;
     }
 
-    .about__video {}
+    .skills__video_container {
+      justify-content: flex-start;
+    }
+
+    // .about__video {}
 
   }
 }
