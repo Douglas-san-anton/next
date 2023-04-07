@@ -9,34 +9,43 @@
   overflow-x: hidden;
 
   .about,
-  .skills {
+  .skills,
+  .work {
     margin: 0 auto;
     color: white;
 
     .about__container,
-    .skills__container {
+    .skills__container,
+    .work__container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: $--pd1;
 
       .about__text,
-      .skills__text {
+      .skills__text,
+      .work__text {
         padding: 0 3rem 0 0;
         width: 52%;
 
         .about__text h1,
-        .skills__text h1 {
+        .skills__text h1,
+        .work__text h1 {
           font-size: 3.125rem;
           line-height: 1.1;
           margin-bottom: 0.5rem;
         }
 
         .about__text p,
-        .skills__text p {
+        .skills__text p,
+        .work__text p {
           font-size: 1.630rem;
           font-weight: 400;
         }
+      }
+
+      .skills__text {
+        padding: 0 0 0 3rem;
       }
     }
 
@@ -46,7 +55,8 @@
     }
 
     .about__video_container,
-    .skills__video_container {
+    .skills__video_container,
+    .work__video_container {
       box-sizing: border-box;
       display: flex;
       justify-content: flex-end;
