@@ -16,12 +16,10 @@ const Home = () => {
           </div>
 
           <div className={styles.about__video_container}>
-            <div className={styles.about__video_animation}>
-              <div className={styles.card_animation}>
-                <video autoPlay muted loop>
-                  <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type='video/mp4' />
-                </video>
-              </div>
+            <div className={styles.about__video}>
+              <video autoPlay muted loop>
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type='video/mp4' />
+              </video>
             </div>
           </div>
 
