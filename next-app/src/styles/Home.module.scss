@@ -28,18 +28,18 @@
         padding: 0 3rem 0 0;
         width: 52%;
 
-        .about__text h1,
-        .skills__text h1,
-        .work__text h1 {
-          font-size: 3.125rem;
+        .about__title,
+        .skills__title,
+        .work__title {
+          font-size: $--font-size-titles;
           line-height: 1.1;
           margin-bottom: 0.5rem;
         }
 
-        .about__text p,
-        .skills__text p,
-        .work__text p {
-          font-size: 1.630rem;
+        .about__p,
+        .skills__p,
+        .work__p {
+          font-size: $--font-size-paragraph;
           font-weight: 400;
         }
       }
@@ -68,7 +68,11 @@
       justify-content: flex-start;
     }
 
-    // .about__video {}
+    .about__video video,
+    .skills__video video,
+    .work__video video {
+      border-radius: $--border-radius;
+    }
 
   }
 }
